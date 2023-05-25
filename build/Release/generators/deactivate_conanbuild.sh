@@ -1,0 +1,1 @@
+. "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release/generators/deactivate_conanbuildenv-release-x86_64.sh"
