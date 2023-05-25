@@ -20,3 +20,4 @@ It's recommended to modify the presets to fit your environment (especially the `
 conan install . -pr=xxx --build=missing
 ```
 Then, select the preset you want to use and build the project.
+Do not forget to change the project name in the `CMakeLists.txt` file.
