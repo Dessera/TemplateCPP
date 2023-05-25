@@ -1,120 +1,119 @@
 {
-  "version": 4,
-  "vendor": {
-    "conan": {}
-  },
-  "include": [
-    "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Debug/generators/CMakePresets.json",
-    "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release/generators/CMakePresets.json"
-  ],
-  "configurePresets": [
-    {
-      "name": "clang-16-debug",
-      "displayName": "clang-16-debug",
-      "description": "Debug with clang-16 (fix error when using conan-debug)",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/Debug",
-      "toolchainFile": "${sourceDir}/build/Debug/generators/conan_toolchain.cmake",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_C_COMPILER": "/usr/bin/clang-16",
-        "CMAKE_CXX_COMPILER": "/usr/bin/clang++-16",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
-      }
+    "version": 4,
+    "vendor": {
+        "conan": {}
     },
-    {
-      "name": "clang-debug",
-      "displayName": "clang-debug",
-      "description": "Debug with clang (fix error when using conan-debug)",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/Debug",
-      "toolchainFile": "${sourceDir}/build/Debug/generators/conan_toolchain.cmake",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_C_COMPILER": "/usr/bin/clang",
-        "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
-      }
-    },
-    {
-      "name": "clang-16-release",
-      "displayName": "clang-16-release",
-      "description": "Release with clang (fix error when using conan-debug)",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/Release",
-      "toolchainFile": "${sourceDir}/build/Release/generators/conan_toolchain.cmake",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_C_COMPILER": "/usr/bin/clang-16",
-        "CMAKE_CXX_COMPILER": "/usr/bin/clang++-16",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
-      }
-    },
-    {
-      "name": "clang-release",
-      "displayName": "clang-release",
-      "description": "Release with clang (fix error when using conan-debug)",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/Release",
-      "toolchainFile": "${sourceDir}/build/Release/generators/conan_toolchain.cmake",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release",
-        "CMAKE_C_COMPILER": "/usr/bin/clang",
-        "CMAKE_CXX_COMPILER": "/usr/bin/clang++",
-        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
-      }
-    }
-  ],
-  "buildPresets": [
-    {
-      "name": "clang-16-debug",
-      "displayName": "clang-16-debug",
-      "description": "Debug with clang-16 (fix error when using conan-debug)",
-      "configurePreset": "clang-16-debug"
-    },
-    {
-      "name": "clang-debug",
-      "displayName": "clang-debug",
-      "description": "Debug with clang (fix error when using conan-debug)",
-      "configurePreset": "clang-debug"
-    },
-    {
-      "name": "clang-16-release",
-      "displayName": "clang-16-release",
-      "description": "Release with clang (fix error when using conan-debug)",
-      "configurePreset": "clang-16-release"
-    },
-    {
-      "name": "clang-release",
-      "displayName": "clang-release",
-      "description": "Release with clang (fix error when using conan-debug)",
-      "configurePreset": "clang-release"
-    }
-  ],
-  "testPresets": [
-    {
-      "name": "clang-16-debug",
-      "displayName": "clang-16-debug",
-      "description": "Debug with clang-16 (fix error when using conan-debug)",
-      "configurePreset": "clang-16-debug"
-    },
-    {
-      "name": "clang-debug",
-      "displayName": "clang-debug",
-      "description": "Debug with clang (fix error when using conan-debug)",
-      "configurePreset": "clang-debug"
-    },
-    {
-      "name": "clang-16-release",
-      "displayName": "clang-16-release",
-      "description": "Release with clang (fix error when using conan-debug)",
-      "configurePreset": "clang-16-release"
-    },
-    {
-      "name": "clang-release",
-      "displayName": "clang-release",
-      "description": "Release with clang (fix error when using conan-debug)",
-      "configurePreset": "clang-release"
-    }
-  ]
+    "include": [
+        "C:\\Users\\Administrator\\Codes\\CPP\\Projects\\TemplateCPP\\build\\Release\\generators\\CMakePresets.json"
+    ],
+    "configurePresets": [
+        {
+            "name": "clang-16-debug",
+            "displayName": "clang-16-debug",
+            "description": "Debug with clang-16 (fix error when using conan-debug)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Debug",
+            "toolchainFile": "${sourceDir}/build/Debug/generators/conan_toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "/usr/bin/clang-16",
+                "CMAKE_CXX_COMPILER": "/usr/bin/clang++-16",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "clang-debug",
+            "displayName": "clang-debug",
+            "description": "Debug with clang (fix error when using conan-debug)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Debug",
+            "toolchainFile": "${sourceDir}/build/Debug/generators/conan_toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "clang-16-release",
+            "displayName": "clang-16-release",
+            "description": "Release with clang (fix error when using conan-debug)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Release",
+            "toolchainFile": "${sourceDir}/build/Release/generators/conan_toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_C_COMPILER": "/usr/bin/clang-16",
+                "CMAKE_CXX_COMPILER": "/usr/bin/clang++-16",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "clang-release",
+            "displayName": "clang-release",
+            "description": "Release with clang (fix error when using conan-debug)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/Release",
+            "toolchainFile": "${sourceDir}/build/Release/generators/conan_toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_C_COMPILER": "clang",
+                "CMAKE_CXX_COMPILER": "clang++",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "clang-16-debug",
+            "displayName": "clang-16-debug",
+            "description": "Debug with clang-16 (fix error when using conan-debug)",
+            "configurePreset": "clang-16-debug"
+        },
+        {
+            "name": "clang-debug",
+            "displayName": "clang-debug",
+            "description": "Debug with clang (fix error when using conan-debug)",
+            "configurePreset": "clang-debug"
+        },
+        {
+            "name": "clang-16-release",
+            "displayName": "clang-16-release",
+            "description": "Release with clang (fix error when using conan-debug)",
+            "configurePreset": "clang-16-release"
+        },
+        {
+            "name": "clang-release",
+            "displayName": "clang-release",
+            "description": "Release with clang (fix error when using conan-debug)",
+            "configurePreset": "clang-release"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "clang-16-debug",
+            "displayName": "clang-16-debug",
+            "description": "Debug with clang-16 (fix error when using conan-debug)",
+            "configurePreset": "clang-16-debug"
+        },
+        {
+            "name": "clang-debug",
+            "displayName": "clang-debug",
+            "description": "Debug with clang (fix error when using conan-debug)",
+            "configurePreset": "clang-debug"
+        },
+        {
+            "name": "clang-16-release",
+            "displayName": "clang-16-release",
+            "description": "Release with clang (fix error when using conan-debug)",
+            "configurePreset": "clang-16-release"
+        },
+        {
+            "name": "clang-release",
+            "displayName": "clang-release",
+            "description": "Release with clang (fix error when using conan-debug)",
+            "configurePreset": "clang-release"
+        }
+    ]
 }

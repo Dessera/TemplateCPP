@@ -6,7 +6,7 @@ set(nlohmann_json_FIND_DEPENDENCY_NAMES "")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(nlohmann_json_PACKAGE_FOLDER_RELEASE "/home/dessera/.conan2/p/nlohm552351c8663ae/p")
+set(nlohmann_json_PACKAGE_FOLDER_RELEASE "C:/Users/Administrator/.conan2/p/nlohm552351c8663ae/p")
 set(nlohmann_json_BUILD_MODULES_PATHS_RELEASE )
 
 
@@ -22,7 +22,7 @@ set(nlohmann_json_COMPILE_OPTIONS_CXX_RELEASE )
 set(nlohmann_json_LIB_DIRS_RELEASE )
 set(nlohmann_json_BIN_DIRS_RELEASE )
 set(nlohmann_json_LIBRARY_TYPE_RELEASE UNKNOWN)
-set(nlohmann_json_IS_HOST_WINDOWS_RELEASE 0)
+set(nlohmann_json_IS_HOST_WINDOWS_RELEASE 1)
 set(nlohmann_json_LIBS_RELEASE )
 set(nlohmann_json_SYSTEM_LIBS_RELEASE )
 set(nlohmann_json_FRAMEWORK_DIRS_RELEASE )

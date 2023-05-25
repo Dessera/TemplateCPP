@@ -27,14 +27,17 @@ string(APPEND CONAN_C_FLAGS " -m64")
 string(APPEND CONAN_SHARED_LINKER_FLAGS " -m64")
 string(APPEND CONAN_EXE_LINKER_FLAGS " -m64")
 
+string(APPEND CONAN_CXX_FLAGS " -stdlib=libstdc++")
 
 
-message(STATUS "Conan toolchain: C++ Standard 17 with extensions ON")
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_EXTENSIONS ON)
+message(STATUS "Conan toolchain: C++ Standard 20 with extensions OFF")
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Extra c, cxx, linkflags and defines
+string(APPEND CONAN_CXX_FLAGS " --target=x86_64-w64-mingw32")
+string(APPEND CONAN_C_FLAGS " --target=x86_64-w64-mingw32")
 
 
 if(DEFINED CONAN_CXX_FLAGS)
@@ -65,14 +68,14 @@ list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_INCLUDE_PATH "/home/dessera/.conan2/p/nlohm552351c8663ae/p/include")
+list(PREPEND CMAKE_INCLUDE_PATH "C:/Users/Administrator/.conan2/p/nlohm552351c8663ae/p/include")
 
 
 
 if (DEFINED ENV{PKG_CONFIG_PATH})
-set(ENV{PKG_CONFIG_PATH} "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release/generators:$ENV{PKG_CONFIG_PATH}")
+set(ENV{PKG_CONFIG_PATH} "${CMAKE_CURRENT_LIST_DIR};$ENV{PKG_CONFIG_PATH}")
 else()
-set(ENV{PKG_CONFIG_PATH} "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release/generators:")
+set(ENV{PKG_CONFIG_PATH} "${CMAKE_CURRENT_LIST_DIR};")
 endif()
 
 

@@ -1,0 +1,12 @@
+[settings]
+arch=x86_64
+build_type=Release
+compiler=clang
+compiler.cppstd=20
+compiler.libcxx=libstdc++11
+compiler.version=16
+os=Windows
+
+[conf]
+tools.build:cxxflags=['--target=x86_64-w64-mingw32']
+tools.build:cflags=['--target=x86_64-w64-mingw32']

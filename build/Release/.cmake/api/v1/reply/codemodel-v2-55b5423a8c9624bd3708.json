@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.0.0"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "IMtrans::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IMtrans-Release-628ad3f01fd1404797c7.json",
+					"jsonFile" : "target-IMtrans-Release-284890a04e56884721d4.json",
 					"name" : "IMtrans",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release",
-		"source" : "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans"
+		"build" : "C:/Users/Administrator/Codes/CPP/Projects/TemplateCPP/build/Release",
+		"source" : "C:/Users/Administrator/Codes/CPP/Projects/TemplateCPP"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 5
 	}
 }

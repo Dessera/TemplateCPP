@@ -12,14 +12,15 @@
         {
             "name": "conan-release",
             "displayName": "'conan-release' config",
-            "description": "'conan-release' configure using 'Unix Makefiles' generator",
-            "generator": "Unix Makefiles",
+            "description": "'conan-release' configure using 'MinGW Makefiles' generator",
+            "generator": "MinGW Makefiles",
             "cacheVariables": {
+                "CMAKE_SH": "CMAKE_SH-NOTFOUND",
                 "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
                 "CMAKE_BUILD_TYPE": "Release"
             },
-            "toolchainFile": "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release/generators/conan_toolchain.cmake",
-            "binaryDir": "/home/dessera/Desktop/CppWorkspace/Projects/IMtrans/build/Release"
+            "toolchainFile": "C:\\Users\\Administrator\\Codes\\CPP\\Projects\\TemplateCPP\\build\\Release\\generators\\conan_toolchain.cmake",
+            "binaryDir": "C:\\Users\\Administrator\\Codes\\CPP\\Projects\\TemplateCPP\\build\\Release"
         }
     ],
     "buildPresets": [
